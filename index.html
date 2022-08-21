@@ -47,10 +47,33 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5WCKZXT');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKSGMV2GVH"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LKSGMV2GVH');
+    </script>
+
 </head>
 
 
 <body id="page-top">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WCKZXT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,7 +84,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top" style="background-image: url( /cache/resize/59ca6a322fd8e4ca4f54448d1177d51c_174x50.png ); background-repeat: no-repeat; background-position:center center; display :block; width: 200px; text-indent:-9999px; "> 
+            <a class="navbar-brand page-scroll" href="#page-top" id="buttonlogo" style="background-image: url( /cache/resize/59ca6a322fd8e4ca4f54448d1177d51c_174x50.png ); background-repeat: no-repeat; background-position:center center; display :block; width: 200px; text-indent:-9999px; "> 
                 CrisMua
             </a>
         </div>
@@ -71,19 +94,19 @@
             <ul class="nav navbar-nav navbar-right">
                 
                 <li>
-                    <a class="page-scroll" href="#sobremi"> SOBRE MÍ </a>
+                    <a class="page-scroll" href="#sobremi" id="navsobremi"> SOBRE MÍ </a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="#servicios"> SERVICIOS </a>
+                    <a class="page-scroll" href="#servicios" id="navservicios"> SERVICIOS </a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="#portfolio"> PORTFOLIO </a>
+                    <a class="page-scroll" href="#portfolio" id="navportfolio"> PORTFOLIO </a>
                 </li>
                 
                 <li>
-                    <a class="page-scroll" href="#contacto"> CONTACTO </a>
+                    <a class="page-scroll" href="#contacto" id="navcontacto"> CONTACTO </a>
                 </li>
                 
             </ul>
@@ -110,7 +133,7 @@
                 <br>
                 Zona CABA - Buenos Aires - Argentina
             </p>
-            <a href="#servicios" class="btn btn-primary btn-xl page-scroll">Conocé más</a>
+            <a href="#servicios" class="btn btn-primary btn-xl page-scroll" id="buttonservicios">Conocé más</a>
         </div>
     </div>
 </header>
@@ -166,7 +189,7 @@
     <div class="container">
         <div class="row text-center" style="padding-top:50px">
             <p>
-                <a href="#portfolio" class="btn btn-primary btn-xl page-scroll">Mirá mi portfolio</a>
+                <a href="#portfolio" class="btn btn-primary btn-xl page-scroll" id="buttonportfolio">Mirá mi portfolio</a>
             </p>
         </div>
     </div>
@@ -336,19 +359,19 @@
         </div>
         <div class="row">
             <div class="col-lg-3 col-lg-offset-1 text-center">
-                <a href="mailto:crismuamakeup@gmail.com?subject=Consulta desde la web&body=Hola! Quiero hacerte una consulta ">
+                <a href="mailto:crismuamakeup@gmail.com?subject=Consulta desde la web&body=Hola! Quiero hacerte una consulta " id="buttonmailto">
                 <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p>crismuamakeup@gmail.com</p>
                 </a>
             </div>
             <div class="col-lg-2 col-lg-offset-1 text-center">
-                <a href="https://www.instagram.com/crismuamakeup" target="_blank">
+                <a href="https://www.instagram.com/crismuamakeup" target="_blank" id="buttoninstagram">
                 <i class="fa fa-instagram fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p>crismuamakeup</p>
                 </a>
             </div>
             <div class="col-lg-2 col-lg-offset-1 text-center">
-                <a href="https://api.whatsapp.com/send/?phone=+5491153417440&text=%C2%A1Hola!%20Quiero%20hacerte%20una%20consulta%20" target="_blank">
+                <a href="https://api.whatsapp.com/send/?phone=+5491153417440&text=%C2%A1Hola!%20Quiero%20hacerte%20una%20consulta%20" target="_blank" id="buttonwhatsapp">
                 <i class="fa fa-whatsapp fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p>+54 911 5341-7440</p>
                 </a>
@@ -374,16 +397,6 @@
 
 <!-- simplelightbox -->
 <script src="assets/js/simplelightbox.js"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LKSGMV2GVH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LKSGMV2GVH');
-</script>
 
 </body>
 
